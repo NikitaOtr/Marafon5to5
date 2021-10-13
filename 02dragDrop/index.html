@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Drag & Drop | Проект 2</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-header start">Начать</div>
+            <div class="col-header progress">В процессе</div>
+            <div class="col-header done">Готовы</div>
+        </div>
+
+        <div class="row container-placeholder">
+
+            <div class="zone">
+                <div class="placeholder">
+                    <div class="item" draggable="true">
+                        <div class="content">1</div>
+                    </div>
+
+                    <div class="item" draggable="true">
+                        <div class="content">2</div>
+                    </div>
+                    
+                    <div class="item" draggable="true">
+                        <div class="content">3</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="zone">
+                <div class="placeholder">
+                    <div class="item" draggable="true">
+                        <div class="content">4</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="zone">
+                <div class="placeholder">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

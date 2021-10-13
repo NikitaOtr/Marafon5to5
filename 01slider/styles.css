@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap'); 
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  overflow: hidden;
+  margin: 0;
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+  gap: 0 10px
+}
+
+.slide {
+  height: 80vh;
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: all .5s ease-in;
+}
+
+.slide h3 {
+  position: absolute;
+  font-size: 18px;
+  bottom: 20px;
+  left: 10px;
+  margin: 0;
+  opacity: 0;
+}
+
+.slide.active {
+  /* Изменяеться от количества слайдов */
+  flex: 20; 
+}
+
+.slide.active h3 {
+  opacity: 1;
+  transition: opacity .3s ease-in .4s; 
+}
+
+.slide-1 {
+    background-image: url('https://st3.idealista.com/cms/archivos/styles/idcms_large_desktop/public/2019-12/media/image/ny.jpg?fv=-TTxVqJe&itok=nVfHrU9N');
+}
+
+.slide-2 {
+    background-image: url('https://st3.idealista.com/cms/archivos/styles/idcms_large_desktop/public/2019-12/media/image/londres_1.jpg?fv=LDtA53fm&itok=hhA-fV4Q');
+}
+
+.slide-3 {
+    background-image: url('https://st3.idealista.com/cms/archivos/styles/idcms_large_desktop/public/2019-12/media/image/venezia.jpg?fv=NimqESDF&itok=8bMQV4Ss');
+}
+
+.slide-4 {
+    background-image: url('https://st3.idealista.com/cms/archivos/styles/idcms_large_desktop/public/2019-12/media/image/vancouver.jpg?fv=ztj-_HIy&itok=AKi3vJQ1');
+}
+
+.slide-5 {
+    background-image: url('https://st3.idealista.com/cms/archivos/styles/idcms_large_desktop/public/2019-12/media/image/barcelona_1.jpg?fv=xf1RSwLD&itok=YvQdAX3m');
+}
+
+.slide-6 {
+  background-image: url('https://st3.idealista.com/cms/archivos/styles/idcms_large_desktop/public/2019-12/media/image/ciudaddelcabo.jpg?fv=5PrFk84b&itok=9kk1oVyX');
+}
+
+.slide-7 {
+  background-image: url('https://st3.idealista.com/cms/archivos/styles/idcms_large_desktop/public/2019-12/media/image/sanfrancisco.jpg?fv=X9vC1EvV&itok=y0nv84uV');
+}
+
+.slide-8 {
+  background-image: url('https://st3.idealista.com/cms/archivos/styles/idcms_large_desktop/public/2019-12/media/image/sidney.jpg?fv=P5eTuwCn&itok=MsYuL4wo');
+}
